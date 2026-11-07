@@ -1,4 +1,22 @@
 node_modules
 dist
 .env
+.env.example
+.env.local
 src/generated
+.neon
+
+# Environment & Secrets
+.env.
+.env.example
+.env.local
+.neon
+
+# Build & Dependencies
+node_modules/
+dist/
+
+# Editor & Agent Cache
+.vscode/
+.agents/
+skills-lock.json

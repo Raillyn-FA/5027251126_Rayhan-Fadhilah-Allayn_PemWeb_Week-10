@@ -26,6 +26,13 @@ npm run dev
 ```
 Lihat isi database: `npx prisma studio`
 
+## Neon
+
+`neon deploy` pulls the linked branch's environment into `.env.local` when `.env`
+does not exist. The app loads `.env` if present, or `.env.local` otherwise.
+Application queries use the pooled `DATABASE_URL`; Prisma schema migrations use
+`DATABASE_URL_UNPOOLED` when Neon provides it.
+
 ## Struktur
 ```
 prisma/
